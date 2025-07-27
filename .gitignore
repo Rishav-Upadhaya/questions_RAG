@@ -1,0 +1,19 @@
+# Environment variables
+.env
+
+# Jupyter notebooks
+questions.ipynb
+
+# Stand‑alone scripts & prompts
+questions.py
+run_agent.py
+run_direct.py
+systemprompt.txt
+test_structure.py
+
+# Sensitive config & vector store credentials
+src/config.py
+src/db/vector_store.py
+
+# Persisted vector DB artifacts
+Database/chromadb/*
