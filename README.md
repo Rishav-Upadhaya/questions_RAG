@@ -32,12 +32,12 @@ This tool answers questions about educational content. It reads PDF files you pu
 
 ```mermaid
 graph TD
-    A[User types a question] --> B[LLM (Google Gemini)]
-    B -->|Does the LLM want to use a tool?| C{Should Continue?}
-    C -- Yes --> D[Retriever Tool (searches your PDFs)]
-    D --> B
-    C -- No --> E[Shows the answer]
-    D -.->|Reads from| F[PDFs in Database/questions/]
+    UserQuestion[User types a question] --> LLM[LLM (Google Gemini)]
+    LLM -->|"Tool needed?"| Decision{Should Continue?}
+    Decision -- Yes --> Retriever[Retriever Tool]
+    Retriever --> LLM
+    Decision -- No --> Answer[Show answer]
+    Retriever -.-> PDFs[PDFs in Database/questions/]
 ```
 
 - The user types a question.
