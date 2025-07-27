@@ -40,8 +40,8 @@ This tool answers questions about educational content. It reads PDF files you pu
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd LeapFrog
+   git clone https://github.com/Rishav-Upadhaya/questions_RAG.git
+   cd questions_RAG
    ```
 2. **Install Python dependencies**
    ```bash
@@ -62,7 +62,6 @@ This tool answers questions about educational content. It reads PDF files you pu
 
 ## Setup and Configuration
 
-- All main settings are in `src/config.py`.
 - You can change:
   - Which LLM model to use
   - LLM temperature (controls randomness)
