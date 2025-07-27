@@ -28,17 +28,7 @@ This tool answers questions about educational content. It reads PDF files you pu
 - Easy to add new tools or change the workflow.
 - Command-line interface for direct use.
 
-## How it Works (Architecture)
-
-```mermaid
-graph TD
-    UserQuestion[User types a question] --> LLM[LLM (Google Gemini)]
-    LLM -->|"Tool needed?"| Decision{Should Continue?}
-    Decision -- Yes --> Retriever[Retriever Tool]
-    Retriever --> LLM
-    Decision -- No --> Answer[Show answer]
-    Retriever -.-> PDFs[PDFs in Database/questions/]
-```
+## How it Works
 
 - The user types a question.
 - The LLM decides if it needs to search your documents.
