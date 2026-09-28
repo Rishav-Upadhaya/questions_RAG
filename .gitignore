@@ -17,3 +17,6 @@ src/db/vector_store.py
 
 # Persisted vector DB artifacts
 Database/chromadb/*
+
+__pycache__/
+*.pyc
